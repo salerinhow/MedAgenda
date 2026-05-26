@@ -35,7 +35,6 @@
     </div>
   </header>
 
-  <!-- Mobile nav -->
   <nav class="nav--mobile" id="mobileNav" aria-label="Menu mobile">
     <a href="index.html"          class="nav__link active">Início</a>
     <a href="especialidades.html" class="nav__link">Especialidades</a>
@@ -46,7 +45,6 @@
 
   <main>
 
-    <!-- ── HERO ──────────────────────────────────────────── -->
     <section class="hero" aria-labelledby="hero-title">
       <div class="container">
         <div class="hero__inner">
@@ -68,7 +66,6 @@
             </div>
           </div>
 
-          <!-- Card mock UI -->
           <div class="hero__visual" aria-hidden="true">
             <div class="hero__card-mock">
               <div class="mock-header">
@@ -113,7 +110,6 @@
       </div>
     </section>
 
-    <!-- ── SOBRE ──────────────────────────────────────────── -->
     <section class="section section--alt" aria-labelledby="sobre-title">
       <div class="container">
         <div class="sobre__inner">
@@ -152,7 +148,6 @@
       </div>
     </section>
 
-    <!-- ── BENEFÍCIOS ─────────────────────────────────────── -->
     <section class="section" aria-labelledby="beneficios-title">
       <div class="container">
         <div class="beneficios__header">
@@ -198,7 +193,6 @@
       </div>
     </section>
 
-    <!-- ── STATS ──────────────────────────────────────────── -->
     <section class="stats" aria-label="Números da MedAgenda">
       <div class="container">
         <div class="stats__inner">
@@ -224,7 +218,6 @@
 
   </main>
 
-  <!-- ── RODAPÉ ─────────────────────────────────────────── -->
   <footer class="footer">
     <div class="container">
       <div class="footer__grid">
@@ -281,7 +274,7 @@
     hamburger.addEventListener('click', () => {
       const isOpen = mobileNav.classList.toggle('open');
       hamburger.setAttribute('aria-expanded', isOpen);
-      // Animate bars
+      
       const spans = hamburger.querySelectorAll('span');
       if (isOpen) {
         spans[0].style.transform = 'translateY(7px) rotate(45deg)';
