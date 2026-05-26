@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Planos — MedAgenda</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── CABEÇALHO ──────────────────────────────────────── -->
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="index.html" class="logo" aria-label="MedAgenda — página inicial">
+          <div class="logo__mark">✚</div>
+          MedAgenda
+        </a>
+
+        <nav class="nav" aria-label="Navegação principal">
+          <ul class="nav__list">
+            <li><a href="index.html"           class="nav__link">Início</a></li>
+            <li><a href="especialidades.html"  class="nav__link">Especialidades</a></li>
+            <li><a href="planos.html"          class="nav__link active">Planos</a></li>
+            <li><a href="contato.html"         class="nav__link">Contato</a></li>
+          </ul>
+        </nav>
+
+        <a href="contato.html" class="btn btn-primary header__cta">Agendar demo</a>
+
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile nav -->
+  <nav class="nav--mobile" id="mobileNav" aria-label="Menu mobile">
+    <a href="index.html"          class="nav__link">Início</a>
+    <a href="especialidades.html" class="nav__link">Especialidades</a>
+    <a href="planos.html"         class="nav__link active">Planos</a>
+    <a href="contato.html"        class="nav__link">Contato</a>
+    <a href="contato.html"        class="btn btn-primary">Agendar demo</a>
+  </nav>
+
+  <main>
+
+    <!-- ── PAGE HERO ─────────────────────────────────────── -->
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container">
+        <span class="section-label">Preços transparentes</span>
+        <h1 class="section-title" id="page-title">Escolha o plano ideal</h1>
+        <p class="section-sub">
+          Sem taxas ocultas. Cancele quando quiser. Todos os planos incluem
+          7 dias gratuitos para você testar sem compromisso.
+        </p>
+      </div>
+    </section>
+
+    <!-- ── TABELA DE PLANOS ───────────────────────────────── -->
+    <section class="planos-section" aria-labelledby="tabela-title">
+      <div class="container">
+        <span class="section-label">Comparativo completo</span>
+        <h2 class="section-title" id="tabela-title">Planos e recursos</h2>
+        <p class="section-sub">
+          Compare os planos e encontre o que melhor se adapta ao tamanho
+          e às necessidades da sua clínica.
+        </p>
+
+        <div class="table-wrap" role="region" aria-label="Tabela comparativa de planos" tabindex="0">
+          <table class="planos-table">
+
+            <!-- ── CABEÇALHO DA TABELA ── -->
+            <thead>
+              <tr>
+                <th class="th-feature" scope="col">Recurso</th>
+                <th class="th-basico" scope="col">
+                  <span class="th-plan-name">Básico</span>
+                  <span class="th-price">R$&nbsp;89<small class="th-price-period">/mês</small></span>
+                </th>
+                <th class="th-pro" scope="col">
+                  <span class="badge-popular">★ Mais popular</span>
+                  <span class="th-plan-name">Profissional</span>
+                  <span class="th-price">R$&nbsp;189<small class="th-price-period">/mês</small></span>
+                </th>
+                <th class="th-premium" scope="col">
+                  <span class="th-plan-name">Premium</span>
+                  <span class="th-price">R$&nbsp;349<small class="th-price-period">/mês</small></span>
+                </th>
+              </tr>
+            </thead>
+
+            <!-- ── CORPO DA TABELA ── -->
+            <tbody>
+              <tr>
+                <td class="col-feature">👤 Usuários incluídos</td>
+                <td>Até 3</td>
+                <td>Até 10</td>
+                <td>Ilimitado</td>
+              </tr>
+              <tr>
+                <td class="col-feature">📅 Agendamentos / mês</td>
+                <td>200</td>
+                <td>1.000</td>
+                <td>Ilimitado</td>
+              </tr>
+              <tr>
+                <td class="col-feature">🏥 Especialidades cadastráveis</td>
+                <td>3</td>
+                <td>15</td>
+                <td>Ilimitado</td>
+              </tr>
+              <tr>
+                <td class="col-feature">📋 Prontuário eletrônico</td>
+                <td><span class="check">✔</span></td>
+                <td><span class="check">✔</span></td>
+                <td><span class="check">✔</span></td>
+              </tr>
+              <tr>
+                <td class="col-feature">🔔 Lembretes por WhatsApp</td>
+                <td><span class="cross">✖</span></td>
+                <td><span class="check">✔</span></td>
+                <td><span class="check">✔</span></td>
+              </tr>
+              <tr>
+                <td class="col-feature">📊 Relatórios avançados</td>
+                <td><span class="cross">✖</span></td>
+                <td><span class="check">✔</span></td>
+                <td><span class="check">✔</span></td>
+              </tr>
+              <tr>
+                <td class="col-feature">🔗 Integração com laboratórios</td>
+                <td><span class="cross">✖</span></td>
+                <td><span class="cross">✖</span></td>
+                <td><span class="check">✔</span></td>
+              </tr>
+              <tr>
+                <td class="col-feature">🧩 API de integração</td>
+                <td><span class="cross">✖</span></td>
+                <td><span class="cross">✖</span></td>
+                <td><span class="check">✔</span></td>
+              </tr>
+              <tr>
+                <td class="col-feature">💾 Armazenamento de arquivos</td>
+                <td>5 GB</td>
+                <td>50 GB</td>
+                <td>500 GB</td>
+              </tr>
+              <!-- Linha com rowspan: suporte -->
+              <tr>
+                <td class="col-feature">🎧 Suporte</td>
+                <td>E-mail (48h)</td>
+                <td>Chat + E-mail (8h)</td>
+                <td>Prioritário 24/7</td>
+              </tr>
+              <tr>
+                <td class="col-feature">🏆 Gerente de conta dedicado</td>
+                <td><span class="cross">✖</span></td>
+                <td><span class="cross">✖</span></td>
+                <td><span class="check">✔</span></td>
+              </tr>
+              <tr>
+                <td class="col-feature">🔒 Backups automáticos</td>
+                <td>Semanal</td>
+                <td>Diário</td>
+                <td>Em tempo real</td>
+              </tr>
+            </tbody>
+
+            <!-- ── RODAPÉ DA TABELA ── -->
+            <tfoot>
+              <tr>
+                <td class="col-feature">Observação</td>
+                <td colspan="3">
+                  Todos os planos incluem SSL gratuito, conformidade com a LGPD,
+                  atualizações automáticas e 7 dias de teste sem cartão de crédito.
+                  Preços em BRL; faturamento mensal ou anual (20% de desconto).
+                </td>
+              </tr>
+            </tfoot>
+
+          </table>
+        </div>
+
+        <!-- CTA abaixo da tabela -->
+        <div style="display:flex;flex-wrap:wrap;gap:16px;justify-content:center;margin-top:48px;">
+          <a href="contato.html" class="btn btn-primary">Começar agora — 7 dias grátis</a>
+          <a href="contato.html" class="btn btn-outline">Falar com um consultor</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── FAQ rápido ─────────────────────────────────────── -->
+    <section class="section section--alt" aria-labelledby="faq-title">
+      <div class="container" style="max-width:760px;">
+        <span class="section-label">Dúvidas frequentes</span>
+        <h2 class="section-title" id="faq-title">Perguntas sobre os planos</h2>
+
+        <div style="margin-top:36px;display:flex;flex-direction:column;gap:20px;">
+
+          <details style="background:var(--c-bg);border:1px solid var(--c-border);
+                          border-radius:var(--radius-md);padding:20px 24px;">
+            <summary style="font-weight:600;color:var(--c-navy);cursor:pointer;">
+              Posso trocar de plano a qualquer momento?
+            </summary>
+            <p style="color:var(--c-muted);margin-top:12px;font-size:.95rem;">
+              Sim. O upgrade é imediato e o downgrade ocorre no próximo ciclo de faturamento,
+              sem multas ou taxas adicionais.
+            </p>
+          </details>
+
+          <details style="background:var(--c-bg);border:1px solid var(--c-border);
+                          border-radius:var(--radius-md);padding:20px 24px;">
+            <summary style="font-weight:600;color:var(--c-navy);cursor:pointer;">
+              Os dados da clínica ficam seguros?
+            </summary>
+            <p style="color:var(--c-muted);margin-top:12px;font-size:.95rem;">
+              Todos os dados são criptografados em trânsito (TLS 1.3) e em repouso (AES-256).
+              Estamos em conformidade total com a LGPD e realizamos auditorias de segurança trimestrais.
+            </p>
+          </details>
+
+          <details style="background:var(--c-bg);border:1px solid var(--c-border);
+                          border-radius:var(--radius-md);padding:20px 24px;">
+            <summary style="font-weight:600;color:var(--c-navy);cursor:pointer;">
+              Existe desconto para pagamento anual?
+            </summary>
+            <p style="color:var(--c-muted);margin-top:12px;font-size:.95rem;">
+              Sim! Optando pelo plano anual você economiza 20% em relação ao plano mensal.
+              O desconto é aplicado automaticamente no checkout.
+            </p>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── RODAPÉ ─────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="logo">
+            <div class="logo__mark">✚</div>
+            MedAgenda
+          </a>
+          <p>Plataforma web para gestão de consultas e pacientes em clínicas pequenas e médias.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="especialidades.html">Especialidades</a></li>
+            <li><a href="planos.html">Planos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Suporte</h4>
+          <ul>
+            <li><a href="#">Central de ajuda</a></li>
+            <li><a href="#">Documentação</a></li>
+            <li><a href="#">Status do sistema</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Termos de uso</a></li>
+            <li><a href="#">Privacidade (LGPD)</a></li>
+            <li><a href="#">Cookies</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2025 MedAgenda. Todos os direitos reservados.</span>
+        <span>Desenvolvido com ✚ para a saúde brasileira</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    hamburger.addEventListener('click', () => {
+      const isOpen = mobileNav.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', isOpen);
+      const spans = hamburger.querySelectorAll('span');
+      if (isOpen) {
+        spans[0].style.transform = 'translateY(7px) rotate(45deg)';
+        spans[1].style.opacity   = '0';
+        spans[2].style.transform = 'translateY(-7px) rotate(-45deg)';
+      } else {
+        spans[0].style.transform = '';
+        spans[1].style.opacity   = '';
+        spans[2].style.transform = '';
+      }
+    });
+  </script>
+
+</body>
+</html>

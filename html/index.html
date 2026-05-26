@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MedAgenda — Gestão de Consultas para Clínicas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+
+        <a href="index.html" class="logo" aria-label="MedAgenda — página inicial">
+          <div class="logo__mark">✚</div>
+          MedAgenda
+        </a>
+
+        <nav class="nav" aria-label="Navegação principal">
+          <ul class="nav__list">
+            <li><a href="index.html"           class="nav__link active">Início</a></li>
+            <li><a href="especialidades.html"  class="nav__link">Especialidades</a></li>
+            <li><a href="planos.html"          class="nav__link">Planos</a></li>
+            <li><a href="contato.html"         class="nav__link">Contato</a></li>
+          </ul>
+        </nav>
+
+        <a href="contato.html" class="btn btn-primary header__cta">Agendar demo</a>
+
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile nav -->
+  <nav class="nav--mobile" id="mobileNav" aria-label="Menu mobile">
+    <a href="index.html"          class="nav__link active">Início</a>
+    <a href="especialidades.html" class="nav__link">Especialidades</a>
+    <a href="planos.html"         class="nav__link">Planos</a>
+    <a href="contato.html"        class="nav__link">Contato</a>
+    <a href="contato.html"        class="btn btn-primary">Agendar demo</a>
+  </nav>
+
+  <main>
+
+    <!-- ── HERO ──────────────────────────────────────────── -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero__inner">
+
+          <div class="hero__content">
+            <div class="hero__eyebrow">
+              <span>✚</span> Plataforma para clínicas
+            </div>
+            <h1 class="hero__title" id="hero-title">
+              Gerencie sua clínica com <em>simplicidade</em> e eficiência
+            </h1>
+            <p class="hero__sub">
+              MedAgenda organiza consultas, médicos e pacientes em um único lugar.
+              Menos papelada, mais cuidado.
+            </p>
+            <div class="hero__actions">
+              <a href="contato.html" class="btn btn-primary">Começar gratuitamente</a>
+              <a href="planos.html"  class="btn btn-hero-secondary">Ver planos →</a>
+            </div>
+          </div>
+
+          <!-- Card mock UI -->
+          <div class="hero__visual" aria-hidden="true">
+            <div class="hero__card-mock">
+              <div class="mock-header">
+                <div class="mock-avatar">👨‍⚕️</div>
+                <div>
+                  <strong>Dr. Lucas Ferreira</strong>
+                  <span>Cardiologia · Hoje</span>
+                </div>
+              </div>
+
+              <div class="mock-slot">
+                <span class="dot dot-green"></span>
+                08:30 — Ana Souza &nbsp;<small>✔ Confirmado</small>
+              </div>
+              <div class="mock-slot">
+                <span class="dot dot-yellow"></span>
+                10:00 — Pedro Lima &nbsp;<small>⏳ Aguardando</small>
+              </div>
+              <div class="mock-slot">
+                <span class="dot dot-blue"></span>
+                14:15 — Maria Campos &nbsp;<small>📋 Retorno</small>
+              </div>
+
+              <div class="mock-stat-row">
+                <div class="mock-stat">
+                  <strong>12</strong>
+                  <span>Consultas</span>
+                </div>
+                <div class="mock-stat">
+                  <strong>98%</strong>
+                  <span>Satisfação</span>
+                </div>
+                <div class="mock-stat">
+                  <strong>0</strong>
+                  <span>Conflitos</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SOBRE ──────────────────────────────────────────── -->
+    <section class="section section--alt" aria-labelledby="sobre-title">
+      <div class="container">
+        <div class="sobre__inner">
+
+          <div class="sobre__text">
+            <span class="section-label">Quem somos</span>
+            <h2 class="section-title" id="sobre-title">
+              Criada para simplificar a rotina da sua clínica
+            </h2>
+            <p>
+              A MedAgenda nasceu da necessidade real de médicos e gestores de clínicas
+              pequenas que precisavam de uma ferramenta acessível, intuitiva e completa —
+              sem a complexidade (e o custo) dos sistemas corporativos.
+            </p>
+            <p style="margin-top: 14px;">
+              Nossa plataforma centraliza agendamentos, histórico de pacientes,
+              especialidades e equipes médicas. Funciona 100% na web, sem instalação,
+              e está pronta para o seu celular.
+            </p>
+            <a href="planos.html" class="btn btn-outline" style="margin-top: 28px;">
+              Conhecer os planos
+            </a>
+          </div>
+
+          <div class="sobre__visual" aria-hidden="true">
+            <div class="sobre__img-wrap">
+              <div class="sobre__img-bg">🏥</div>
+              <div class="sobre__badge">
+                <strong>+2.500</strong>
+                clínicas usando hoje
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── BENEFÍCIOS ─────────────────────────────────────── -->
+    <section class="section" aria-labelledby="beneficios-title">
+      <div class="container">
+        <div class="beneficios__header">
+          <span class="section-label">Por que escolher</span>
+          <h2 class="section-title" id="beneficios-title">
+            Tudo que sua clínica precisa
+          </h2>
+          <p class="section-sub">
+            Três pilares que fazem a diferença no dia a dia dos profissionais de saúde.
+          </p>
+        </div>
+
+        <div class="beneficios__grid">
+
+          <article class="beneficio-card">
+            <div class="beneficio-card__icon">📅</div>
+            <h3>Agendamento Inteligente</h3>
+            <p>
+              Organize consultas sem conflitos de horário. Notificações automáticas
+              reduzem faltas e mantêm sua agenda sempre atualizada.
+            </p>
+          </article>
+
+          <article class="beneficio-card">
+            <div class="beneficio-card__icon">👥</div>
+            <h3>Gestão de Pacientes</h3>
+            <p>
+              Mantenha o histórico completo de cada paciente: contatos, especialidades,
+              consultas anteriores e observações clínicas em um só lugar.
+            </p>
+          </article>
+
+          <article class="beneficio-card">
+            <div class="beneficio-card__icon">📊</div>
+            <h3>Relatórios em Tempo Real</h3>
+            <p>
+              Acompanhe indicadores da clínica, taxa de ocupação e satisfação dos
+              pacientes com dashboards simples e visuais, acessíveis de qualquer tela.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── STATS ──────────────────────────────────────────── -->
+    <section class="stats" aria-label="Números da MedAgenda">
+      <div class="container">
+        <div class="stats__inner">
+          <div class="stat-item">
+            <div class="stat-item__num">2.500+</div>
+            <div class="stat-item__label">Clínicas cadastradas</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-item__num">180 mil</div>
+            <div class="stat-item__label">Consultas agendadas/mês</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-item__num">98%</div>
+            <div class="stat-item__label">Índice de satisfação</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-item__num">24/7</div>
+            <div class="stat-item__label">Plataforma disponível</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── RODAPÉ ─────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+
+        <div class="footer__brand">
+          <a href="index.html" class="logo">
+            <div class="logo__mark">✚</div>
+            MedAgenda
+          </a>
+          <p>Plataforma web para gestão de consultas e pacientes em clínicas pequenas e médias.</p>
+        </div>
+
+        <div class="footer__col">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="especialidades.html">Especialidades</a></li>
+            <li><a href="planos.html">Planos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4>Suporte</h4>
+          <ul>
+            <li><a href="#">Central de ajuda</a></li>
+            <li><a href="#">Documentação</a></li>
+            <li><a href="#">Status do sistema</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Termos de uso</a></li>
+            <li><a href="#">Privacidade (LGPD)</a></li>
+            <li><a href="#">Cookies</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <span>© 2025 MedAgenda. Todos os direitos reservados.</span>
+        <span>Desenvolvido com ✚ para a saúde brasileira</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+
+    hamburger.addEventListener('click', () => {
+      const isOpen = mobileNav.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', isOpen);
+      // Animate bars
+      const spans = hamburger.querySelectorAll('span');
+      if (isOpen) {
+        spans[0].style.transform = 'translateY(7px) rotate(45deg)';
+        spans[1].style.opacity   = '0';
+        spans[2].style.transform = 'translateY(-7px) rotate(-45deg)';
+      } else {
+        spans[0].style.transform = '';
+        spans[1].style.opacity   = '';
+        spans[2].style.transform = '';
+      }
+    });
+  </script>
+
+</body>
+</html>

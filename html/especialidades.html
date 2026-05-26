@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Especialidades — MedAgenda</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── CABEÇALHO ──────────────────────────────────────── -->
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="index.html" class="logo" aria-label="MedAgenda — página inicial">
+          <div class="logo__mark">✚</div>
+          MedAgenda
+        </a>
+
+        <nav class="nav" aria-label="Navegação principal">
+          <ul class="nav__list">
+            <li><a href="index.html"           class="nav__link">Início</a></li>
+            <li><a href="especialidades.html"  class="nav__link active">Especialidades</a></li>
+            <li><a href="planos.html"          class="nav__link">Planos</a></li>
+            <li><a href="contato.html"         class="nav__link">Contato</a></li>
+          </ul>
+        </nav>
+
+        <a href="contato.html" class="btn btn-primary header__cta">Agendar demo</a>
+
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile nav -->
+  <nav class="nav--mobile" id="mobileNav" aria-label="Menu mobile">
+    <a href="index.html"          class="nav__link">Início</a>
+    <a href="especialidades.html" class="nav__link active">Especialidades</a>
+    <a href="planos.html"         class="nav__link">Planos</a>
+    <a href="contato.html"        class="nav__link">Contato</a>
+    <a href="contato.html"        class="btn btn-primary">Agendar demo</a>
+  </nav>
+
+  <main>
+
+    <!-- ── PAGE HERO ─────────────────────────────────────── -->
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container">
+        <span class="section-label">Nossa cobertura</span>
+        <h1 class="section-title" id="page-title">Especialidades disponíveis</h1>
+        <p class="section-sub">
+          Encontre o especialista certo e agende sua consulta em poucos cliques.
+          Mais de 15 áreas médicas cobertas pela plataforma.
+        </p>
+      </div>
+    </section>
+
+    <!-- ── CARDS DE ESPECIALIDADES ────────────────────────── -->
+    <section aria-label="Lista de especialidades">
+      <div class="container">
+        <div class="espec__grid">
+
+          <!-- Card 1 -->
+          <article class="espec-card">
+            <div class="espec-card__thumb">❤️</div>
+            <div class="espec-card__body">
+              <span class="espec-card__specialty">Especialidade</span>
+              <h2>Cardiologia</h2>
+              <p>
+                Diagnóstico e tratamento de doenças do coração e sistema cardiovascular.
+                Eletrocardiograma, ecocardiograma e acompanhamento contínuo.
+              </p>
+              <a href="contato.html" class="btn btn-ghost">Ver horários</a>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="espec-card">
+            <div class="espec-card__thumb">🧠</div>
+            <div class="espec-card__body">
+              <span class="espec-card__specialty">Especialidade</span>
+              <h2>Neurologia</h2>
+              <p>
+                Avaliação e tratamento de distúrbios do sistema nervoso central
+                e periférico: enxaquecas, epilepsia, AVC e neuropatias.
+              </p>
+              <a href="contato.html" class="btn btn-ghost">Ver horários</a>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="espec-card">
+            <div class="espec-card__thumb">🦴</div>
+            <div class="espec-card__body">
+              <span class="espec-card__specialty">Especialidade</span>
+              <h2>Ortopedia</h2>
+              <p>
+                Cuidado especializado em lesões e doenças do sistema músculo-esquelético:
+                coluna, joelhos, ombros e articulações em geral.
+              </p>
+              <a href="contato.html" class="btn btn-ghost">Ver horários</a>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="espec-card">
+            <div class="espec-card__thumb">👁️</div>
+            <div class="espec-card__body">
+              <span class="espec-card__specialty">Especialidade</span>
+              <h2>Oftalmologia</h2>
+              <p>
+                Exames de refração, cirurgia refrativa, tratamento de glaucoma,
+                catarata e acompanhamento da saúde ocular preventiva.
+              </p>
+              <a href="contato.html" class="btn btn-ghost">Ver horários</a>
+            </div>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="espec-card">
+            <div class="espec-card__thumb">🩺</div>
+            <div class="espec-card__body">
+              <span class="espec-card__specialty">Especialidade</span>
+              <h2>Clínica Geral</h2>
+              <p>
+                Atendimento de saúde integral para adultos. Consultas preventivas,
+                check-up anual, orientação nutricional e solicitação de exames.
+              </p>
+              <a href="contato.html" class="btn btn-ghost">Ver horários</a>
+            </div>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="espec-card">
+            <div class="espec-card__thumb">🍼</div>
+            <div class="espec-card__body">
+              <span class="espec-card__specialty">Especialidade</span>
+              <h2>Pediatria</h2>
+              <p>
+                Acompanhamento do crescimento e desenvolvimento infantil. Vacinação,
+                atendimento de urgências e consultas de puericultura.
+              </p>
+              <a href="contato.html" class="btn btn-ghost">Ver horários</a>
+            </div>
+          </article>
+
+          <!-- Card 7 -->
+          <article class="espec-card">
+            <div class="espec-card__thumb">🦷</div>
+            <div class="espec-card__body">
+              <span class="espec-card__specialty">Especialidade</span>
+              <h2>Dermatologia</h2>
+              <p>
+                Diagnóstico e tratamento de doenças da pele, cabelos e unhas.
+                Dermatoscopia, biopsias e procedimentos estéticos médicos.
+              </p>
+              <a href="contato.html" class="btn btn-ghost">Ver horários</a>
+            </div>
+          </article>
+
+          <!-- Card 8 -->
+          <article class="espec-card">
+            <div class="espec-card__thumb">🫁</div>
+            <div class="espec-card__body">
+              <span class="espec-card__specialty">Especialidade</span>
+              <h2>Pneumologia</h2>
+              <p>
+                Cuidado com doenças respiratórias como asma, DPOC e pneumonias.
+                Espirometria e acompanhamento de pacientes com apneia do sono.
+              </p>
+              <a href="contato.html" class="btn btn-ghost">Ver horários</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA ───────────────────────────────────────────── -->
+    <section class="stats" style="padding:56px 0;" aria-label="Chamada para ação">
+      <div class="container" style="text-align:center;">
+        <h2 style="font-family:var(--font-display);font-size:clamp(1.6rem,4vw,2.2rem);
+                   color:#fff;margin-bottom:12px;">
+          Não encontrou sua especialidade?
+        </h2>
+        <p style="color:rgba(255,255,255,.7);margin-bottom:28px;max-width:480px;margin-inline:auto;">
+          Entre em contato — adicionamos novas especialidades conforme a demanda das clínicas parceiras.
+        </p>
+        <a href="contato.html" class="btn btn-primary">Falar com a equipe</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── RODAPÉ ─────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="logo">
+            <div class="logo__mark">✚</div>
+            MedAgenda
+          </a>
+          <p>Plataforma web para gestão de consultas e pacientes em clínicas pequenas e médias.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="especialidades.html">Especialidades</a></li>
+            <li><a href="planos.html">Planos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Suporte</h4>
+          <ul>
+            <li><a href="#">Central de ajuda</a></li>
+            <li><a href="#">Documentação</a></li>
+            <li><a href="#">Status do sistema</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Termos de uso</a></li>
+            <li><a href="#">Privacidade (LGPD)</a></li>
+            <li><a href="#">Cookies</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2025 MedAgenda. Todos os direitos reservados.</span>
+        <span>Desenvolvido com ✚ para a saúde brasileira</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    hamburger.addEventListener('click', () => {
+      const isOpen = mobileNav.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', isOpen);
+      const spans = hamburger.querySelectorAll('span');
+      if (isOpen) {
+        spans[0].style.transform = 'translateY(7px) rotate(45deg)';
+        spans[1].style.opacity   = '0';
+        spans[2].style.transform = 'translateY(-7px) rotate(-45deg)';
+      } else {
+        spans[0].style.transform = '';
+        spans[1].style.opacity   = '';
+        spans[2].style.transform = '';
+      }
+    });
+  </script>
+
+</body>
+</html>

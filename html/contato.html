@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato — MedAgenda</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── CABEÇALHO ──────────────────────────────────────── -->
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="index.html" class="logo" aria-label="MedAgenda — página inicial">
+          <div class="logo__mark">✚</div>
+          MedAgenda
+        </a>
+
+        <nav class="nav" aria-label="Navegação principal">
+          <ul class="nav__list">
+            <li><a href="index.html"           class="nav__link">Início</a></li>
+            <li><a href="especialidades.html"  class="nav__link">Especialidades</a></li>
+            <li><a href="planos.html"          class="nav__link">Planos</a></li>
+            <li><a href="contato.html"         class="nav__link active">Contato</a></li>
+          </ul>
+        </nav>
+
+        <a href="contato.html" class="btn btn-primary header__cta">Agendar demo</a>
+
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile nav -->
+  <nav class="nav--mobile" id="mobileNav" aria-label="Menu mobile">
+    <a href="index.html"          class="nav__link">Início</a>
+    <a href="especialidades.html" class="nav__link">Especialidades</a>
+    <a href="planos.html"         class="nav__link">Planos</a>
+    <a href="contato.html"        class="nav__link active">Contato</a>
+    <a href="contato.html"        class="btn btn-primary">Agendar demo</a>
+  </nav>
+
+  <main>
+
+    <!-- ── PAGE HERO ─────────────────────────────────────── -->
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container">
+        <span class="section-label">Fale conosco</span>
+        <h1 class="section-title" id="page-title">Entre em contato</h1>
+        <p class="section-sub">
+          Nossa equipe responde em até 24 horas úteis. Para demonstrações
+          ao vivo, entre em contato e agendamos um horário conveniente para você.
+        </p>
+      </div>
+    </section>
+
+    <!-- ── FORMULÁRIO + INFO ──────────────────────────────── -->
+    <section class="contato-section" aria-labelledby="form-title">
+      <div class="container">
+        <div class="contato__inner">
+
+          <!-- Informações de contato -->
+          <aside class="contato__info" aria-label="Informações de contato">
+            <span class="section-label">Como nos encontrar</span>
+            <h2 class="section-title" id="contato-info-title">
+              Estamos aqui para ajudar
+            </h2>
+            <p>
+              Tem dúvidas sobre algum plano, quer uma demonstração ou
+              precisa de suporte? Preencha o formulário ou use um dos canais abaixo.
+            </p>
+
+            <div style="margin-top: 28px;">
+
+              <div class="info-item">
+                <div class="info-item__icon">📧</div>
+                <div class="info-item__text">
+                  <strong>E-mail</strong>
+                  <span>contato@medagenda.com.br</span>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-item__icon">📞</div>
+                <div class="info-item__text">
+                  <strong>Telefone / WhatsApp</strong>
+                  <span>(11) 98765-4321</span>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-item__icon">📍</div>
+                <div class="info-item__text">
+                  <strong>Endereço</strong>
+                  <span>Av. Paulista, 1000 — São Paulo, SP</span>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-item__icon">🕐</div>
+                <div class="info-item__text">
+                  <strong>Horário de atendimento</strong>
+                  <span>Seg–Sex, 8h às 18h (GMT-3)</span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Vídeo institucional -->
+            <div style="margin-top:36px;">
+              <p style="font-weight:600;color:var(--c-navy);font-size:.9rem;
+                        margin-bottom:10px;">🎬 Veja como funciona a plataforma</p>
+              <div style="border-radius:var(--radius-md);overflow:hidden;
+                          box-shadow:var(--shadow-sm);border:1px solid var(--c-border);">
+                <video
+                  width="100%"
+                  controls
+                  poster=""
+                  preload="metadata"
+                  aria-label="Vídeo demonstrativo da MedAgenda"
+                  style="display:block;background:#0B3D52;">
+                  <!-- Em produção, substituir pelo src real do vídeo -->
+                  <source src="" type="video/mp4" />
+                  <p style="padding:20px;color:#fff;text-align:center;font-size:.85rem;">
+                    Seu navegador não suporta vídeo HTML5.
+                    <a href="#" style="color:var(--c-mint);">Baixar o vídeo</a>
+                  </p>
+                </video>
+              </div>
+              <p style="font-size:.78rem;color:var(--c-muted);margin-top:8px;text-align:center;">
+                Demonstração — 2 min
+              </p>
+            </div>
+
+          </aside>
+
+          <!-- Formulário -->
+          <div class="contato__form-wrap">
+            <h2 class="form-title" id="form-title">Envie sua mensagem</h2>
+
+            <form
+              id="contatoForm"
+              novalidate
+              aria-label="Formulário de contato"
+            >
+
+              <!-- Linha: Nome + Email -->
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="nome">Nome completo <span class="req">*</span></label>
+                  <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Ex.: Maria da Silva"
+                    required
+                    autocomplete="name"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="email">E-mail <span class="req">*</span></label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Ex.: maria@clinica.com.br"
+                    required
+                    autocomplete="email"
+                  />
+                </div>
+              </div>
+
+              <!-- Linha: Telefone + Cidade -->
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="telefone">Telefone / WhatsApp <span class="req">*</span></label>
+                  <input
+                    type="tel"
+                    id="telefone"
+                    name="telefone"
+                    placeholder="(XX) 9XXXX-XXXX"
+                    required
+                    autocomplete="tel"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="cidade">Cidade</label>
+                  <input
+                    type="text"
+                    id="cidade"
+                    name="cidade"
+                    placeholder="Ex.: Recife"
+                    autocomplete="address-level2"
+                  />
+                </div>
+              </div>
+
+              <!-- Tipo de atendimento (select) -->
+              <div class="form-group">
+                <label for="atendimento">Tipo de atendimento <span class="req">*</span></label>
+                <select id="atendimento" name="atendimento" required>
+                  <option value="" disabled selected>Selecione uma opção…</option>
+                  <optgroup label="Planos">
+                    <option value="demo">Quero uma demonstração ao vivo</option>
+                    <option value="plano-basico">Tenho interesse no Plano Básico</option>
+                    <option value="plano-pro">Tenho interesse no Plano Profissional</option>
+                    <option value="plano-premium">Tenho interesse no Plano Premium</option>
+                  </optgroup>
+                  <optgroup label="Suporte">
+                    <option value="suporte-tecnico">Suporte técnico</option>
+                    <option value="financeiro">Dúvida financeira / cobrança</option>
+                  </optgroup>
+                  <optgroup label="Outros">
+                    <option value="parceria">Parceria / revendedor</option>
+                    <option value="imprensa">Imprensa</option>
+                    <option value="outro">Outro assunto</option>
+                  </optgroup>
+                </select>
+              </div>
+
+              <!-- Mensagem (textarea) -->
+              <div class="form-group">
+                <label for="mensagem">Mensagem <span class="req">*</span></label>
+                <textarea
+                  id="mensagem"
+                  name="mensagem"
+                  placeholder="Descreva sua dúvida, necessidade ou o que você espera da nossa plataforma…"
+                  required
+                  rows="5"
+                ></textarea>
+              </div>
+
+              <!-- Aceite dos termos -->
+              <div class="checkbox-group">
+                <input type="checkbox" id="termos" name="termos" required />
+                <label for="termos">
+                  Li e aceito os
+                  <a href="#">Termos de Uso</a> e a
+                  <a href="#">Política de Privacidade</a> da MedAgenda.
+                  Estou ciente de que meus dados serão tratados conforme a LGPD.
+                </label>
+              </div>
+
+              <!-- Botão de envio -->
+              <button type="submit" class="btn btn-primary form-submit">
+                Enviar mensagem ✉
+              </button>
+
+              <!-- Feedback de envio -->
+              <div
+                id="formSuccess"
+                role="alert"
+                aria-live="polite"
+                style="display:none;margin-top:16px;background:var(--c-sky);
+                       border:1px solid var(--c-mint);border-radius:var(--radius-sm);
+                       padding:14px 18px;color:var(--c-navy);font-size:.9rem;"
+              >
+                ✅ Mensagem enviada com sucesso! Nossa equipe entrará em contato em breve.
+              </div>
+
+              <div
+                id="formError"
+                role="alert"
+                aria-live="polite"
+                style="display:none;margin-top:16px;background:#fff0f0;
+                       border:1px solid #f87171;border-radius:var(--radius-sm);
+                       padding:14px 18px;color:#b91c1c;font-size:.9rem;"
+              >
+                ⚠️ Por favor, preencha todos os campos obrigatórios antes de enviar.
+              </div>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── RODAPÉ ─────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="logo">
+            <div class="logo__mark">✚</div>
+            MedAgenda
+          </a>
+          <p>Plataforma web para gestão de consultas e pacientes em clínicas pequenas e médias.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="especialidades.html">Especialidades</a></li>
+            <li><a href="planos.html">Planos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Suporte</h4>
+          <ul>
+            <li><a href="#">Central de ajuda</a></li>
+            <li><a href="#">Documentação</a></li>
+            <li><a href="#">Status do sistema</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Termos de uso</a></li>
+            <li><a href="#">Privacidade (LGPD)</a></li>
+            <li><a href="#">Cookies</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2025 MedAgenda. Todos os direitos reservados.</span>
+        <span>Desenvolvido com ✚ para a saúde brasileira</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    /* ── Hamburger ── */
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    hamburger.addEventListener('click', () => {
+      const isOpen = mobileNav.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', isOpen);
+      const spans = hamburger.querySelectorAll('span');
+      if (isOpen) {
+        spans[0].style.transform = 'translateY(7px) rotate(45deg)';
+        spans[1].style.opacity   = '0';
+        spans[2].style.transform = 'translateY(-7px) rotate(-45deg)';
+      } else {
+        spans[0].style.transform = '';
+        spans[1].style.opacity   = '';
+        spans[2].style.transform = '';
+      }
+    });
+
+    /* ── Máscara de telefone ── */
+    const telInput = document.getElementById('telefone');
+    telInput.addEventListener('input', () => {
+      let v = telInput.value.replace(/\D/g, '');
+      if (v.length > 11) v = v.slice(0, 11);
+      if (v.length > 6)
+        v = `(${v.slice(0,2)}) ${v.slice(2,7)}-${v.slice(7)}`;
+      else if (v.length > 2)
+        v = `(${v.slice(0,2)}) ${v.slice(2)}`;
+      else if (v.length > 0)
+        v = `(${v}`;
+      telInput.value = v;
+    });
+
+    /* ── Validação / feedback do formulário ── */
+    const form        = document.getElementById('contatoForm');
+    const successMsg  = document.getElementById('formSuccess');
+    const errorMsg    = document.getElementById('formError');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      successMsg.style.display = 'none';
+      errorMsg.style.display   = 'none';
+
+      if (!form.checkValidity()) {
+        errorMsg.style.display = 'block';
+        // Foca no primeiro campo inválido
+        const first = form.querySelector(':invalid');
+        if (first) first.focus();
+        return;
+      }
+
+      // Simula envio bem-sucedido
+      successMsg.style.display = 'block';
+      form.reset();
+      successMsg.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    });
+  </script>
+
+</body>
+</html>
