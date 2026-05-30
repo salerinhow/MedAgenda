@@ -313,58 +313,5 @@
     </div>
   </footer>
 
-  <script>
-    const hamburger = document.getElementById('hamburger');
-    const mobileNav = document.getElementById('mobileNav');
-    hamburger.addEventListener('click', () => {
-      const isOpen = mobileNav.classList.toggle('open');
-      hamburger.setAttribute('aria-expanded', isOpen);
-      const spans = hamburger.querySelectorAll('span');
-      if (isOpen) {
-        spans[0].style.transform = 'translateY(7px) rotate(45deg)';
-        spans[1].style.opacity   = '0';
-        spans[2].style.transform = 'translateY(-7px) rotate(-45deg)';
-      } else {
-        spans[0].style.transform = '';
-        spans[1].style.opacity   = '';
-        spans[2].style.transform = '';
-      }
-    });
-
-    const telInput = document.getElementById('telefone');
-    telInput.addEventListener('input', () => {
-      let v = telInput.value.replace(/\D/g, '');
-      if (v.length > 11) v = v.slice(0, 11);
-      if (v.length > 6)
-        v = `(${v.slice(0,2)}) ${v.slice(2,7)}-${v.slice(7)}`;
-      else if (v.length > 2)
-        v = `(${v.slice(0,2)}) ${v.slice(2)}`;
-      else if (v.length > 0)
-        v = `(${v}`;
-      telInput.value = v;
-    });
-
-    const form        = document.getElementById('contatoForm');
-    const successMsg  = document.getElementById('formSuccess');
-    const errorMsg    = document.getElementById('formError');
-
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      successMsg.style.display = 'none';
-      errorMsg.style.display   = 'none';
-
-      if (!form.checkValidity()) {
-        errorMsg.style.display = 'block';
-        const first = form.querySelector(':invalid');
-        if (first) first.focus();
-        return;
-      }
-
-      successMsg.style.display = 'block';
-      form.reset();
-      successMsg.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-    });
-  </script>
-
 </body>
 </html>
